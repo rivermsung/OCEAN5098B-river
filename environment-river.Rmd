@@ -3,16 +3,16 @@ title: "Vianney's website cloned by River"
 ---
 
 ```{r eval = TRUE,  message=F, include=FALSE, warning=F, purl=F, results="hide"}
-knitr::purl('environment.Rmd', documentation = 0)
+knitr::purl('environment-river.Rmd', documentation = 0)
 ```
 
 
 ```{r echo=FALSE, purl=F}
-xfun::embed_file('environment.Rmd')
+xfun::embed_file('environment-river.Rmd')
 ```
 
 ```{r echo=FALSE, purl=F}
-xfun::embed_file('environment.R')
+xfun::embed_file('environment-river.R')
 ```
 
 
