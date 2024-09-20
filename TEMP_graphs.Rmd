@@ -1,10 +1,10 @@
 ---
-title: "..."
+title: "Cats flying weeeeeee"
 ---
 
 ```{r,  eval=T, include=F}
 
-#devtools::install_github("R-CoderDotCom/ggcats@main")
+remotes::install_github("R-CoderDotCom/ggcats@main")
 library(dplyr)
 library(ggplot2)
 library(ggthemes)
