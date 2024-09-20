@@ -77,6 +77,29 @@ anim_save("illustrations/cats.gif", cats)
 # code from: https://rpubs.com/gunjan29/funnyplots
 ```
 
+```{r}
+library(ggcats)
+library(ggplot2)
+
+grid <- expand.grid(1:5, 3:1)
+
+df <- data.frame(x = grid[, 1],
+                 y = grid[, 2],
+                 image = c("nyancat", "bongo",
+                           "colonel", "grumpy",
+                           "hipster", "lil_bub",
+                           "maru", "mouth",
+                           "pop", "pop_close", 
+                           "pusheen", "pusheen_pc",
+                           "toast", "venus",
+                           "shironeko"))
+
+ggplot(df) +
+   geom_cat(aes(x, y, cat = image), size = 5) +
+   geom_text(aes(x, y - 0.5, label = image), size = 2.5) +
+   xlim(c(0.25, 5.5)) + 
+   ylim(c(0.25, 3.5))
+```
 
 ```{r, echo=FALSE, fig.align='center', out.width = '100%'}
 knitr::include_graphics("illustrations/cats.gif")
