@@ -1,5 +1,5 @@
 ---
-title: "Fun with R: Ecological data analysis in R"
+title: "Fun with Rrrr: Ecological data analysis in Rrrriver!"
 ---
 
 Welcome to the website of *OCEAN 5098*. This course will help you familiarize yourself with the R environment and some common functionalities for ecological studies. No prior knowledge of R or any other programming language is required to participate in this course.

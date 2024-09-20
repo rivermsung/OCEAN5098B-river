@@ -11,9 +11,9 @@
 
 
 
-<title>Fun with R: Ecological data analysis in R</title>
+<title>Fun with Rrrr: Ecological data analysis in Rrrriver!</title>
 
-<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,19 +29,20 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
-<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="site_libs/leaflet-binding-2.2.2.9000/leaflet.js"></script>
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -480,46 +481,33 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Fun with R: Ecological data analysis in
-R</h1>
+<h1 class="title toc-ignore">Fun with Rrrr: Ecological data analysis in Rrrriver!</h1>
 
 </div>
 
 
-<p>Welcome to the website of <em>OCEAN 5098</em>. This course will help
-you familiarize yourself with the R environment and some common
-functionalities for ecological studies. No prior knowledge of R or any
-other programming language is required to participate in this
-course.</p>
+<p>Welcome to the website of <em>OCEAN 5098</em>. This course will help you familiarize yourself with the R environment and some common functionalities for ecological studies. No prior knowledge of R or any other programming language is required to participate in this course.</p>
 <div id="information" class="section level1">
 <h1>Information</h1>
 <p><strong>Credits</strong>: 3</p>
 <p><strong>Time</strong>: Tuesday 13:20- 16:20 (fall Semester)</p>
-<p><strong>Location</strong>: Institute of Oceanography, 2nd floor, Room
-231</p>
-<p><strong>Instructors:</strong> Vianney DENIS [<a
-href="mailto:vianneydenis@ntu.edu.tw"
-class="email">vianneydenis@ntu.edu.tw</a>] - Functional Reef Ecology
-Laboratory, R406, 4F, Institute of Oceanography, National Taiwan
-University, Taiwan.</p>
+<p><strong>Location</strong>: Institute of Oceanography, 2nd floor, Room 231</p>
+<p><strong>Instructors:</strong> Vianney DENIS [<a href="mailto:vianneydenis@ntu.edu.tw" class="email">vianneydenis@ntu.edu.tw</a>] - Functional Reef Ecology Laboratory, R406, 4F, Institute of Oceanography, National Taiwan University, Taiwan.</p>
 <blockquote>
-<p>📝 The syllabus for this course is available on NTU Cool, but it can
-also be downloaded <a
-href=".\documents\OCEAN5098_syllabus.pdf">HERE</a>. However, the
-timetable, content and assessment mode are susceptible to change.</p>
+<p>📝 The syllabus for this course is available on NTU Cool, but it can also be downloaded <a href=".\documents\OCEAN5098_syllabus.pdf">HERE</a>. However, the timetable, content and assessment mode are susceptible to change.</p>
 </blockquote>
 <style>
 .html-widget {
     margin: auto;
 }
 </style>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="fl">121.53698079935072</span>, <span class="at">lat=</span><span class="fl">25.021273839061028</span>, <span class="at">popup=</span><span class="st">&quot;Where we will meet every Tuesday!&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="fl">121.53698079935072</span>, <span class="at">lat=</span><span class="fl">25.021273839061028</span>, <span class="at">popup=</span><span class="st">&quot;Where we will meet every Tuesday!&quot;</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0e3b4c84597b5c97bbef" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-0e3b4c84597b5c97bbef">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[25.021273839061,121.536980799351,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Where we will meet every Tuesday!",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[25.021273839061,25.021273839061],"lng":[121.536980799351,121.536980799351]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-4c5fcaa70b06bd74773e" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-4c5fcaa70b06bd74773e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[25.02127383906103,121.5369807993507,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Where we will meet every Tuesday!",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[25.02127383906103,25.02127383906103],"lng":[121.5369807993507,121.5369807993507]}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Location of IONTU
 </p>
@@ -530,60 +518,24 @@ Location of IONTU
 </div>
 <div id="description" class="section level1">
 <h1>Description</h1>
-<p>This course is primarily intended to introduce students to the use of
-the R language. It will introduce R environment as well as common
-functions for sorting, visualising, and analysing data in (but not
-exlusively) ecology. Topics covered include: Introduction to the R
-language and basic functions, data manipulation, graphs, maps, linear
-models, parametric and non-parametric analyses, multivariate analyses,
-etc.</p>
-<p><strong>Objectives</strong> The aim of this course is to familiarize
-participants with the R language. This course will explore the many
-benefits of the R language for formatting reports, preparing
-presentations, researching and analyzing ecological relationships,
-manipulating data, and sharing projects. The course assumes that
-students have no prior knowledge of R or other programming languages.
-The course starts from scratch, <strong>i.e.</strong> you will download
-and install R on your computer. Over the course of the semester, you
-will be introduced to the use of <a
-href="https://www.rstudio.com/">RStudio/Posit GUI</a>, <a
-href="https://rmarkdown.rstudio.com/">Rmarkdown</a>, and <a
-href="https://github.com/">GitHub</a> repositories that will
-harmoniously complete your R experience.</p>
+<p>This course is primarily intended to introduce students to the use of the R language. It will introduce R environment as well as common functions for sorting, visualising, and analysing data in (but not exlusively) ecology. Topics covered include: Introduction to the R language and basic functions, data manipulation, graphs, maps, linear models, parametric and non-parametric analyses, multivariate analyses, etc.</p>
+<p><strong>Objectives</strong> The aim of this course is to familiarize participants with the R language. This course will explore the many benefits of the R language for formatting reports, preparing presentations, researching and analyzing ecological relationships, manipulating data, and sharing projects. The course assumes that students have no prior knowledge of R or other programming languages. The course starts from scratch, <strong>i.e.</strong> you will download and install R on your computer. Over the course of the semester, you will be introduced to the use of <a href="https://www.rstudio.com/">RStudio/Posit GUI</a>, <a href="https://rmarkdown.rstudio.com/">Rmarkdown</a>, and <a href="https://github.com/">GitHub</a> repositories that will harmoniously complete your R experience.</p>
 <p>After attending this course, a student should:</p>
 <p>👉 be aware of the many benefits of using R;</p>
-<p>👉 not be afraid of using code to organize, visualize and analyze
-data;</p>
-<p>👉 become a self-learner who is able to explore and solve
-problems;</p>
-<p>👉 know different statistical tools especially for analyzing
-ecological data;</p>
-<p>👉 be able to analyze and scientifically evaluate simple ecological
-data sets;</p>
+<p>👉 not be afraid of using code to organize, visualize and analyze data;</p>
+<p>👉 become a self-learner who is able to explore and solve problems;</p>
+<p>👉 know different statistical tools especially for analyzing ecological data;</p>
+<p>👉 be able to analyze and scientifically evaluate simple ecological data sets;</p>
 <p>👉 be able to give help and advice on the use of R.</p>
-<p><strong>Requirements</strong> Basic knowledge and interest in
-biology/ecology/computer science. Participants must bring and use their
-own computer for the course.</p>
-<p><strong>Disclaimer</strong> The format of this course is largely
-based on the online documentation. Examples are often illustrated using
-known, publicly available data sets.</p>
+<p><strong>Requirements</strong> Basic knowledge and interest in biology/ecology/computer science. Participants must bring and use their own computer for the course.</p>
+<p><strong>Disclaimer</strong> The format of this course is largely based on the online documentation. Examples are often illustrated using known, publicly available data sets.</p>
 <p><strong>Useful references</strong></p>
-<p>Many useful references (books, websites, blogs) will be provided
-along the semester. Please signal any dead links.</p>
+<p>Many useful references (books, websites, blogs) will be provided along the semester. Please signal any dead links.</p>
 </div>
 <div id="schedule" class="section level1">
 <h1>Schedule</h1>
-<p>The schedule is always changing as I keep updating this class.
-Progress is also dependent on the students’ engagement and feedback,
-which helps me refine the content to better suit their needs. This year,
-we should have fewer stats but an updated section on using spatial data
-and making some cool maps in R (update in progress).</p>
+<p>The schedule is always changing as I keep updating this class. Progress is also dependent on the students’ engagement and feedback, which helps me refine the content to better suit their needs. This year, we should have fewer stats but an updated section on using spatial data and making some cool maps in R (update in progress).</p>
 <table>
-<colgroup>
-<col width="6%" />
-<col width="31%" />
-<col width="62%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Week</th>
@@ -649,79 +601,32 @@ and making some cool maps in R (update in progress).</p>
 </tr>
 </tbody>
 </table>
-<p>This course aims to learn while exploring. I am a marine ecologist,
-not a computer scientist or biostatistician. Therefore, we will avoid
-jargon as much as possible while trying to find fun in what we learn and
-in using R. Basically, the goal of this course is to teach you how to
-search for relevant information. Do not hope to know everything in R,
-that is not possible. However, your goal should be to be able to find
-everything you need ;)</p>
+<p>This course aims to learn while exploring. I am a marine ecologist, not a computer scientist or biostatistician. Therefore, we will avoid jargon as much as possible while trying to find fun in what we learn and in using R. Basically, the goal of this course is to teach you how to search for relevant information. Do not hope to know everything in R, that is not possible. However, your goal should be to be able to find everything you need ;)</p>
 </div>
 <div id="evaluation" class="section level1">
 <h1>Evaluation</h1>
-<p>The evaluation mode is pending. Updates will be published directly
-here or mentioned in class.</p>
-<p><strong>(1)</strong> During the semester, you will be assigned some
-more or less simple exercises to practice what you have learned in
-class. It is no secret that practice makes you better, and I need to
-make sure that you are not lost. You will find two types of
-<strong>practice</strong> in the lectures:</p>
+<p>The evaluation mode is pending. Updates will be published directly here or mentioned in class.</p>
+<p><strong>(1)</strong> During the semester, you will be assigned some more or less simple exercises to practice what you have learned in class. It is no secret that practice makes you better, and I need to make sure that you are not lost. You will find two types of <strong>practice</strong> in the lectures:</p>
 <ul>
 <li>The 1st type is highlighted in green</li>
 </ul>
 <p class="comment">
-<strong>Practice A</strong> This is a practical session that you should
-try out for yourself. You do not have to send me, but you need to make
-sure you can do it yourself. If you can not do it, it means you are
-behind and it is very important that you catch up on the previous
-content as soon as possible.
+<strong>Practice A</strong> This is a practical session that you should try out for yourself. You do not have to send me, but you need to make sure you can do it yourself. If you can not do it, it means you are behind and it is very important that you catch up on the previous content as soon as possible.
 </p>
 <ul>
 <li>The 2nd type is highlighted in red</li>
 </ul>
 <p class="alert">
-<strong>⚠ Practice B</strong> This is a practical exercise that I expect
-you to solve for the <strong>Monday</strong> before the next class.
-Please read the instructions carefully and send me the solution by email
-to [<a href="mailto:vianneydenis@g.ntu.edu.tw"
-class="email">vianneydenis@g.ntu.edu.tw</a>]. To ensure that I have
-received your email, use <strong>Practice B (your name: your student
-number)</strong> as the title for this email. I only accept
-<em>.Rmd</em> OR <em>.html</em> formats OR a link to a repository where
-I can find these files. Therefore, make sure you quickly understand how
-to create these formats with R (see <a
-href="./environment.html">Environment</a>).
+<strong>⚠ Practice B</strong> This is a practical exercise that I expect you to solve for the <strong>Monday</strong> before the next class. Please read the instructions carefully and send me the solution by email to [<a href="mailto:vianneydenis@g.ntu.edu.tw" class="email">vianneydenis@g.ntu.edu.tw</a>]. To ensure that I have received your email, use <strong>Practice B (your name: your student number)</strong> as the title for this email. I only accept <em>.Rmd</em> OR <em>.html</em> formats OR a link to a repository where I can find these files. Therefore, make sure you quickly understand how to create these formats with R (see <a href="./environment.html">Environment</a>).
 </p>
-<p><strong>(2)</strong> At the beginning of the class, one student may
-be randomly selected to present a homework assignment (<em>.Rmd</em>
-and/or <em>.html</em>) (5-10 minutes). The following R chunk code will
-make the decision, and you may be selected several times during the
-semester (lucky) or never (unlucky). Conclusion: <em>Always be
-prepared</em> and do your homework, it’s for your own good :)</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>list_student<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&#39;Student_1&#39;</span>,<span class="st">&#39;Student_2&#39;</span>,<span class="st">&#39;Student_3&#39;</span>,<span class="st">&#39;Student_4&#39;</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">sample</span>(list_student, <span class="dv">1</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<p>Note that this selection is not random if the homework is not
-sent.</p>
-<p><strong>(3)</strong> DATATHON (<strong>NEW</strong>) as final
-project. The students are provided with a data set to analyze (type
-‘Scientific Data’: <a href="https://www.nature.com/sdata/"
-class="uri">https://www.nature.com/sdata/</a>). Students (in groups of
-2-3 if necessary) will identify relevant research questions based on
-this dataset and prepare a short scientific report (max. 10 pages +
-references), presenting <strong>methodology</strong> and
-<strong>results</strong> in a <strong>scientific format</strong>.
-Introduction and discussion/conclusion will be presented as
-<strong>bullet points</strong>. The report should be sent as
-<em>.Rmd</em> <strong>AND</strong> <em>.html</em> or shared via a GitHub
-repository. This report should be generated during the semester and not
-in the last week. Accordingly, no advise will be given on this report
-during the last two weeks of the semester as I usually receive tons of
-requests as the end of the semester approaches.</p>
+<p><strong>(2)</strong> At the beginning of the class, one student may be randomly selected to present a homework assignment (<em>.Rmd</em> and/or <em>.html</em>) (5-10 minutes). The following R chunk code will make the decision, and you may be selected several times during the semester (lucky) or never (unlucky). Conclusion: <em>Always be prepared</em> and do your homework, it’s for your own good :)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>list_student<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&#39;Student_1&#39;</span>,<span class="st">&#39;Student_2&#39;</span>,<span class="st">&#39;Student_3&#39;</span>,<span class="st">&#39;Student_4&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(list_student, <span class="dv">1</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p>Note that this selection is not random if the homework is not sent.</p>
+<p><strong>(3)</strong> DATATHON (<strong>NEW</strong>) as final project. The students are provided with a data set to analyze (type ‘Scientific Data’: <a href="https://www.nature.com/sdata/" class="uri">https://www.nature.com/sdata/</a>). Students (in groups of 2-3 if necessary) will identify relevant research questions based on this dataset and prepare a short scientific report (max. 10 pages + references), presenting <strong>methodology</strong> and <strong>results</strong> in a <strong>scientific format</strong>. Introduction and discussion/conclusion will be presented as <strong>bullet points</strong>. The report should be sent as <em>.Rmd</em> <strong>AND</strong> <em>.html</em> or shared via a GitHub repository. This report should be generated during the semester and not in the last week. Accordingly, no advise will be given on this report during the last two weeks of the semester as I usually receive tons of requests as the end of the semester approaches.</p>
 <p style="color:red">
-The final grade is usually made up of class participation
-(<strong>10%</strong>), homework/reviews (<strong>20%</strong>) and the
-final group report (<strong>70%</strong>)
+The final grade is usually made up of class participation (<strong>10%</strong>), homework/reviews (<strong>20%</strong>) and the final group report (<strong>70%</strong>)
 </p>
 </div>
 
